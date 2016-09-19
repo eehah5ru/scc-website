@@ -1,0 +1,22 @@
+section.description {
+  @extend .row;
+  @extend .expanded;
+
+  position: relative;
+
+  background-color: $green;
+
+  // height: 100%;
+  min-height: 100%;
+
+  .description-container {
+    @include vertical-center;
+  }
+
+  .left,
+  .right {
+    @extend .small-12;
+    @extend .medium-6;
+    @extend .columns;
+  }
+}
