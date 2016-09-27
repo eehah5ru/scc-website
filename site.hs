@@ -25,7 +25,7 @@ main =
      imagesRules
      fontsRules
      phpRules
-     -- dataRules
+     dataRules
 
      --
      -- CSS and SASS
@@ -67,10 +67,10 @@ main =
 
 --------------------------------------------------------------------------------
 
--- dataRules =
---   match "data/**" $
---         do route idRoute
---            compile copyFileCompiler
+dataRules =
+  match "data/**" $
+        do route idRoute
+           compile copyFileCompiler
 
 imagesRules =
   match "images/**" $

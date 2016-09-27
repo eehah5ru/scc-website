@@ -5,18 +5,32 @@ section.description {
   position: relative;
 
   background-color: $green;
+  height: auto;
 
   // height: 100%;
-  min-height: 100%;
+  // min-height: 100%;
 
-  .description-container {
-    @include vertical-center;
-  }
+  // .description-container {
+  //   @include vertical-center;
+  // }
 
   .left,
   .right {
     @extend .small-12;
     @extend .medium-6;
     @extend .columns;
+
+    margin-top: 1rem;
+  }
+
+  .right {
+    @include breakpoint(small only) {
+      margin-top: 0;
+    }
+  }
+
+  p a {
+    text-transform: none;
+    text-decoration: underline;
   }
 }

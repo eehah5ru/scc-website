@@ -1,0 +1,53 @@
+section.materials-zero {
+  @extend .row;
+  @extend .expanded;
+
+  position: relative;
+  background-image: url("../images/materials-zero-bkg-v3.gif");
+  background-position: center;
+  background-size: cover;
+
+
+  height: 100%;
+  min-height: 100%;
+
+  h1 {
+    @extend .column;
+    @extend .small-12;
+
+    padding-top: 1rem;
+
+    color: $white;
+    text-shadow: red -2px -2px;
+  }
+
+  p {
+    @extend .columns;
+    @extend .small-12;
+    @extend .medium-6;
+    @extend .large-4;
+    @extend .end;
+
+    color: $white;
+    text-shadow: blue -1px -1px;
+  }
+
+  a.button {
+    @extend .columns;
+    @extend .small-12;
+    @extend .end;
+    @extend .large;
+
+    background-image: url("../images/materials-zero-bkg-v3-inv.gif");
+    background-position: center;
+    background-size: cover;
+
+    color: red;
+    text-shadow: $white -2px -2px;
+
+    &:hover {
+      letter-spacing: rem-calc(0.7rem);
+    }
+
+  }
+}
