@@ -14,6 +14,30 @@
   // background-position: center;
   // background-size: cover;
 
+  .lang-switch {
+    transform: translate(2.5vw) rotate(90deg);
+    display: block;
+    font-size: 5vw;
+    line-height: 1;
+    padding-left: 6vw;
+    color: $not-jet;
+    // text-decoration: underline;
+    top: 0;
+    right: 0;
+    position: absolute;
+    z-index: 99;
+
+    @include breakpoint(440) {
+      font-size: 5vw;
+    }
+
+
+    &:hover {
+      color: $red;
+      text-shadow: $blue -4px -4px;
+    }
+  }
+
 
   .menu {
     @include horizontal-center;
