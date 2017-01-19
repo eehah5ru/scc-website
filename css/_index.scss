@@ -8,16 +8,46 @@
   min-height: 100%;
   text-align: center;
 
-  // background-color: $primary-color;
+  background-color: $primary-color;
 
-  background-image: url("../images/scc-03.gif");
-  background-position: center;
-  background-size: cover;
+  // background-image: url("../images/scc-03.gif");
+  // background-position: center;
+  // background-size: cover;
+
 
   .menu {
     @include horizontal-center;
 
     top: 2rem;
+
+    &.large-menu {
+      display: none;
+      @include breakpoint(644) {
+        display: block;
+      }
+      // @extend .hide-for-small;
+      // @extend .show-for-large;
+    }
+
+    &.small-menu {
+      @include breakpoint(644) {
+        display: none;
+      }
+    }
+
+    &.ru {
+      a {
+        font-size: 85%;
+
+        @include breakpoint(360) {
+          font-size: 100%;
+        }
+      }
+    }
+
+    &.second-line {
+      top: 4rem;
+    }
 
     a {
       color: $white;
@@ -74,6 +104,7 @@
     text-align: center;
 
     .collect-email-input {
+      opacity: 0.8;
       @extend .small-12;
       @extend .medium-6;
       @extend .medium-centered;
@@ -82,13 +113,14 @@
       }
     }
 
-    .button {
-      background-color: blue;
-        box-shadow: red 6px 6px;
+  .button {
+      background-color: rgba(blue, 0.8);
+      box-shadow: rgba(red, 0.8) 6px 6px;
+
 
       &:hover {
-        background-color: red;
-          box-shadow: blue 6px 6px;
+        background-color: rgba(red, 0.8);
+          box-shadow: rgba(blue, 0.8) 6px 6px;
 
       }
     }

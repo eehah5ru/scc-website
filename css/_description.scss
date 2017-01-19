@@ -4,7 +4,7 @@ section.description {
 
   position: relative;
 
-  background-color: $green;
+  background-color: $white;
   height: auto;
 
   // height: 100%;
@@ -27,6 +27,36 @@ section.description {
     @include breakpoint(small only) {
       margin-top: 0;
     }
+  }
+
+  .description-container {
+    @extend .small-12;
+    @extend .medium-10;
+    @extend .medium-offset-1;
+    @extend .large-6;
+    @extend .large-offset-3;
+    @extend .columns;
+    @extend .end;
+
+    margin-top: 4rem;
+    margin-bottom: 4rem;
+
+    // @include breakpoint(1400) {
+    //   @extend .large-4;
+    //   @extend .large-offset-4;
+    // }
+  }
+
+  ul {
+    // margin-top: -1rem;
+    list-style-position: inside;
+    list-style-type: none;
+    padding: 0;
+    // border-left: solid 2px $primary-color;
+  }
+
+  p:last-of-type {
+    margin-bottom: 0;
   }
 
   p a {

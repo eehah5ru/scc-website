@@ -1,0 +1,73 @@
+section.materials-one {
+  @extend .row;
+  @extend .expanded;
+
+  position: relative;
+  background-image: url("../images/materials-one-bkg-v2.jpg");
+  background-position: center;
+  background-size: cover;
+
+
+  // height: 100%;
+  // min-height: 100%;
+
+  h1 {
+    @extend .column;
+    @extend .small-12;
+
+    padding-top: 1rem;
+
+    color: $white;
+
+    span {
+      background-color: rgba($red, 0.8);
+    }
+
+    text-shadow: $jet -1px -1px;
+  }
+
+  article {
+    @extend .columns;
+    @extend .small-12;
+    @extend .row;
+    @extend .expanded;
+  }
+
+  .large-left,
+  .large-right {
+    @extend .columns;
+    @extend .small-12;
+    // @extend .medium-6;
+    @extend .large-6;
+    @extend .large-offset-6;
+    // @extend .end;
+  }
+
+  p {
+    color: $white;
+    text-shadow: $jet -1px -1px;
+
+    span {
+      background-color: rgba($not-jet, 0.4);
+    }
+  }
+
+  // a.button {
+  //   @extend .columns;
+  //   @extend .small-12;
+  //   @extend .end;
+  //   @extend .large;
+
+  //   background-image: url("../images/materials-zero-bkg-v3-inv.gif");
+  //   background-position: center;
+  //   background-size: cover;
+
+  //   color: red;
+  //   text-shadow: $white -2px -2px;
+
+  //   &:hover {
+  //     letter-spacing: rem-calc(0.7rem);
+  //   }
+
+  // }
+}

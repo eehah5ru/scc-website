@@ -57,7 +57,7 @@ main =
      -- index page
      --
      indexPageRules
-     -- indexEnPageRules
+     indexEnPageRules
 
      --
      -- templates
@@ -198,6 +198,7 @@ coffee = getResourceString >>= withItemBody processCoffee
   where
     processCoffee = unixFilter "coffee" ["-c", "-s"] >=>
                     unixFilter "yuicompressor" ["--type", "js"]
+
 
 slimCompiler :: Compiler (Item String)
 slimCompiler = getResourceString >>= withItemBody processSlim
