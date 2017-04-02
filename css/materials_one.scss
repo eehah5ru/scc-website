@@ -14,6 +14,7 @@ section.materials-one {
   h1 {
     @extend .column;
     @extend .small-12;
+    @extend .large-6;
 
     padding-top: 1rem;
 
@@ -29,8 +30,14 @@ section.materials-one {
   article {
     @extend .columns;
     @extend .small-12;
+    @extend .large-6;
     @extend .row;
     @extend .expanded;
+
+    padding-top: 1rem;
+    padding-right: rem-calc(15px);
+    padding-left: rem-calc(15px);
+
   }
 
   .large-left,
